@@ -3,21 +3,25 @@
 
 1- Install all dependencies:
 
-```npm install```
+```javascript
+npm install
+```
 
-2- Configuring ports:
+2- Configuring ports (```\app\public\js\main.js```, ``` \app\server\chichat.js```):
 
-``` \app\public\js\main.js```
-
-``` \app\server\chichat.js```
-
-``` port: '8013' ```
+```javascript 
+port: '8013' 
+```
 
 3- Launch server:
 
-```cd .\app\server```
+```javascript
+cd .\app\server
+```
 
-```npm start```
+```javascript
+npm start
+```
 
 4- Open the ```index.html``` in your browser.
 
