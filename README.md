@@ -17,9 +17,6 @@ port: '8013'
 
 ```javascript
 cd .\app\server
-```
-
-```javascript
 npm start
 ```
 
