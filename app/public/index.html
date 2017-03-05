@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+	<title>ChiChat</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css" >	
+	<link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
+
+	<script src="../../node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>  
+    <div class="container">
+        <div class="bg-image">
+            <div class="header"></div>
+        </div>
+
+        <div class="follow">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="number">312</span>
+                        <span class="followers">Followers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="number">84</span>
+                        <span class="following">Following</span>
+                    </a>
+                </li>
+                <div class="badboy"></div>
+            </ul>
+        </div>
+
+        <div class="image"></div>
+
+        <input type="radio" id="one" name="control" checked> 
+        <label for="one"><i class="icon-comments-alt"></i></label>
+
+        <input type="radio" id="two" name="control">
+        <label for="two"><i class="icon-user"></i></label>
+
+        <input type="radio" id="three" name="control"> 
+        <label for="three"><i class="icon-envelope"></i></label>
+
+        <div class="all">
+            <div class="chat">
+                <div id="show-messages"></div>
+                <form class="type-text">
+                    <input type="text" id="userMessage" placeholder="Input your message">
+                    <button type="button" onclick="addMessage( this )"></button>
+                </form>         
+            </div>
+
+            <div class="Description">             
+                <p>
+                   <i class="icon-quote-left"></i>            
+                   My name is Fernando Jiménez Peña
+                   <br>
+                   I'm a passionate about UI Development
+                   <br>
+                   I love reading, drawing, chess and...
+                   <br>
+                   spending time with my family and friends.
+                   <br>
+                   <strong>My Motto:</strong>
+                   <br>
+                   Do good work and share it with people ;D          
+                </p>
+            </div>
+
+            <div class="Link">
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://es.linkedin.com/in/fejipe121">Portfolio: fejipe121</a></li>
+                        <li><span>Mobile: +34 650 290 774</span></li>
+                        <li><span>Email: fejipe121@hotmail.com</span></li>                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <input class="modal-state" id="modal" type="checkbox" checked>
+    <div class="modal"> 
+        <div class="modal__inner">
+            <h1>Wellcome to <span>chiChat</span></h1>
+            <label class="modal__close" for="modal"></label>
+            <form>                          
+                <div class="styled-input">
+                    <input type="text" id="userName">
+                    <label id="userNameLayer" class="modal_label">Input your user name</label>
+                    <span></span> 
+                </div>
+            </form>    
+        </div>
+    </div>
+</body>  
+</html> 
